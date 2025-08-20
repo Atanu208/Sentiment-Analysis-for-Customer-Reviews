@@ -1,46 +1,42 @@
-# 🎓 Student Mark Predictor
+# 📝 Sentiment Analysis for Customer Reviews
 
-The **Student Mark Predictor** is a machine learning project that predicts students’ future marks based on their past performance and study patterns. It helps students and educators identify areas for improvement early.
+This project is a simplified **Sentiment Analysis** application built with **Python** and **Scikit-learn**. It classifies customer reviews into **positive** or **negative** sentiments, helping businesses understand customer feedback.
 
 ## 🔹 Features
 
-* Predicts marks using inputs such as:
-
-  * Previous exam scores
-  * Attendance percentage
-  * Study hours
-  * Assignment completion rate
-* Built with **Python (Pandas, NumPy, Scikit-learn)** for preprocessing, training, and evaluation.
-* Implements multiple regression algorithms and selects the best-performing model.
-* Flask-based web app interface to input student data and display predicted marks.
-* Clean modular code for data handling, model training, and predictions.
+* Preprocesses raw customer reviews (cleaning, tokenization, stopword removal).
+* Uses **TF-IDF vectorization** to convert text into numerical features.
+* Trains machine learning models (e.g., Logistic Regression, Naive Bayes) for sentiment classification.
+* Evaluates models with accuracy, precision, recall, and F1-score.
+* Provides a simple script to test new customer reviews.
 
 ## 🛠 Tech Stack
 
-* **Backend/ML:** Python, Scikit-learn, Pandas, NumPy
-* **Web Framework:** Flask
-* **Tools:** Jupyter Notebook, Matplotlib/Seaborn (for visualization)
+* **Language:** Python
+* **Libraries:** Scikit-learn, Pandas, NumPy
+* **Visualization:** Matplotlib / Seaborn (for evaluation plots)
 
 ## 🚀 How It Works
 
-1. Collect student-related data (scores, attendance, study hours, assignments).
-2. Train regression models on the dataset.
-3. Evaluate models and choose the best one.
-4. Enter new student data via Flask web app.
-5. Get predicted marks instantly.
+1. Load dataset of customer reviews.
+2. Preprocess and clean text data.
+3. Convert text to vectors using **TF-IDF**.
+4. Train sentiment classification models.
+5. Evaluate and test predictions on new reviews.
 
 ## 📂 Project Structure
 
 ```
-Student-Mark-Predictor/
-│── data/               # Dataset files
-│── notebooks/          # Jupyter notebooks for exploration & training
-│── models/             # Saved trained models
-│── app.py              # Flask application
+Sentiment-Analysis-for-Customer-Reviews/
+│── data/               # Dataset (CSV file with reviews & labels)
+│── notebooks/          # Jupyter notebooks for training & testing
+│── sentiment_model.py  # Python script for model training
+│── predict.py          # Script to test new reviews
 │── requirements.txt    # Dependencies
 │── README.md           # Project documentation
 ```
 
 ## 📖 Documentation
 
-The project is fully documented with dataset details, preprocessing steps, model pipeline, and usage instructions.
+The project includes step-by-step explanation of text preprocessing, feature extraction, model training, and evaluation to help beginners understand **NLP with Scikit-learn**.
+
